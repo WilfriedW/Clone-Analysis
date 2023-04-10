@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5e29deb51b422110407dca641a4bcba8" label="Configuration" max_length="40" name="x_322488_clone_a_0_configuration_table" type="collection">
+        <element label="Customer" max_length="40" name="customer" type="string"/>
+        <element label="Include Default Update Set" max_length="40" name="include_default_update_set" type="boolean"/>
+        <element label="Instance URL" max_length="40" name="instance_url" type="url"/>
+        <element label="Login" max_length="32" name="login" reference="discovery_credentials" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Target Instance" max_length="32" name="target_instance" reference="instance" reference_qual="source=false" reference_qual_condition="source=false" type="reference"/>
+        <index name="index">
+            <element name="login"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
+            <element name="target_instance"/>
+        </index>
+    </element>
+</database>

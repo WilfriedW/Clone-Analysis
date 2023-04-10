@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Local update set</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_322488_clone_a_0/clone_analyse</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 20:12:31</sys_created_on>
+        <sys_id>d33e9ef91b422110407dca641a4bcb76</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Local update set</sys_name>
+        <sys_package display_value="Clone analyse" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clone analyse">83c85ab51b422110407dca641a4bcbb4</sys_scope>
+        <sys_update_name>sys_ws_operation_d33e9ef91b422110407dca641a4bcb76</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 20:14:02</sys_updated_on>
+        <web_service_definition display_value="Clone Analyse">2d2e1ef91b422110407dca641a4bcbcb</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</application>
+        <file_path/>
+        <instance_id>a18f45d8db8dfac0bdabf0e5bf961912</instance_id>
+        <instance_name>dev28551</instance_name>
+        <name>sys_ws_operation_d33e9ef91b422110407dca641a4bcb76</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;Local update set&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_322488_clone_a_0/clone_analyse&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-07 20:12:31&lt;/sys_created_on&gt;&lt;sys_id&gt;d33e9ef91b422110407dca641a4bcb76&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Local update set&lt;/sys_name&gt;&lt;sys_package display_value="Clone analyse" source="x_322488_clone_a_0"&gt;83c85ab51b422110407dca641a4bcbb4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Clone analyse"&gt;83c85ab51b422110407dca641a4bcbb4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_d33e9ef91b422110407dca641a4bcb76&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-07 20:14:02&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Clone Analyse"&gt;2d2e1ef91b422110407dca641a4bcbcb&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-46846404</payload_hash>
+        <record_name>Local update set</record_name>
+        <reverted_from/>
+        <source>8bc85ab51b422110407dca641a4bcbc2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 20:14:02</sys_created_on>
+        <sys_id>31cedef91b422110407dca641a4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1875d5ac5330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 20:14:02</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>39cedef96e42211021fe331a5ebf2fc4</update_guid>
+        <update_guid_history>39cedef96e42211021fe331a5ebf2fc4:-46846404,cf8e123d0d422110592690b12c89a2c8:-771126717,2f6edaf94042211052b394d0e375d9cc:1808654157</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 20:16:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>4cd04b88cdbb4c30ae242485e5210bf1</sys_id>
+        <sys_metadata>d33e9ef91b422110407dca641a4bcb76</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Local update set</sys_name>
+        <sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
+        <sys_scope_delete display_value="">2958f5364143467d94fa593e4159fd31</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_d33e9ef91b422110407dca641a4bcb76</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_d33e9ef91b422110407dca641a4bcb76">31cedef91b422110407dca641a4bcbc5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-07 20:16:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
