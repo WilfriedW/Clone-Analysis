@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="login" label="Login" language="en" table="x_322488_clone_a_0_configuration_table">
+    <sys_documentation element="target_instance_login" label="Target Instance login" language="en" table="x_322488_clone_a_0_configuration_table">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>login</element>
+            <element>target_instance_login</element>
             <help/>
             <hint/>
-            <label>Login</label>
+            <label>Target Instance login</label>
             <language>en</language>
             <name>x_322488_clone_a_0_configuration_table</name>
             <plural/>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-04-07 19:52:04</sys_created_on>
+            <sys_created_on>2023-04-15 21:10:10</sys_created_on>
             <sys_mod_count>3</sys_mod_count>
-            <sys_name>Login</sys_name>
+            <sys_name>Target Instance login</sys_name>
             <sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
             <sys_policy/>
             <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
-            <sys_update_name>sys_documentation_x_322488_clone_a_0_configuration_table_login_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_322488_clone_a_0_configuration_table_target_instance_login_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-04-07 19:52:06</sys_updated_on>
+            <sys_updated_on>2023-04-15 21:10:12</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

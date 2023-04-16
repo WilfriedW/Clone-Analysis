@@ -16,33 +16,71 @@ CloneAnalyseUtils.prototype = {
             var i = 0;
             var responseParsed = JSON.parse(response);
             while (i < responseParsed.result.length) {
-                var grUpdateSet = new GlideRecord('x_322488_clone_a_0_update_set'); {
-                    grUpdateSet.initialize();
-                    grUpdateSet.configuration = configuration.sys_id;
-                    grUpdateSet.instance = configuration.instance_url;
-                    grUpdateSet.name = responseParsed.result[i].name;
-                    grUpdateSet.state = responseParsed.result[i].state;
-					grUpdateSet.source = source;
-                    grUpdateSet.committed_in_the_instance = this.checkCurrentUS(responseParsed.result[i].name, 'sys_update_set');
-                    grUpdateSet.retrieved_in_the_instance = this.checkCurrentUS(responseParsed.result[i].name, 'sys_remote_update_set');
-					if (grUpdateSet.commited_in_the_instance == false && grUpdateSet.retrieved_in_the_instance == false)
-						grUpdateSet.warning = true;
-                    grUpdateSet.insert();
+                if (source == "Retrieved")
+                    var usAlreayCommited = this.checkUS(responseParsed.result[i].name, configuration);
+
+                if (!usAlreayCommited) {
+                    var grUpdateSet = new GlideRecord('x_322488_clone_a_0_update_set'); {
+                        grUpdateSet.initialize();
+                        grUpdateSet.configuration = configuration.sys_id;
+                        grUpdateSet.name = responseParsed.result[i].name;
+                        grUpdateSet.state = responseParsed.result[i].state;
+                        grUpdateSet.instance = responseParsed.result[i].update_source;
+                        grUpdateSet.source = source;
+                        grUpdateSet.insert();
+                    }
                 }
                 i++;
             }
         } catch (e) {
-            gs.info("Clone Analyse: " + JSON.stringify(e), "CloneAnalyseUtils");
+            gs.info("Clone Analysis :: createRecord : " + JSON.stringify(e), "CloneAnalyseUtils");
         }
     },
+
+    compareRecords: function(response, configuration) {
+        try {
+            var i = 0;
+            var responseParsed = JSON.parse(response);
+            while (i < responseParsed.result.length) {
+                var grSysUpdateSet = new GlideRecord("x_322488_clone_a_0_update_set");
+                grSysUpdateSet.addEncodedQuery("configuration=" + configuration.sys_id + "^name=" + responseParsed.result[i].name + "^source=local");
+                grSysUpdateSet.query();
+                if (grSysUpdateSet.next()) {
+                    grSysUpdateSet.committed_in_the_instance = true;
+                    grSysUpdateSet.update();
+                } else {
+                    //var grSysUpdateSet = new GlideRecord("x_322488_clone_a_0_update_set");
+                    grSysUpdateSet.addEncodedQuery("configuration=" + configuration.sys_id + "^name=" + responseParsed.result[i].name + "^source=Retrieved");
+                    grSysUpdateSet.query();
+                    if (grSysUpdateSet.next()) {
+                        grSysUpdateSet.retrieved_in_the_instance = true;
+                        grSysUpdateSet.update();
+
+                    }
+                }
+                i++;
+            }
+        } catch (e) {
+            gs.info("Clone Analysis :: compareRecords : " + JSON.stringify(e), "CloneAnalyseUtils");
+        }
+    },
+
     checkCurrentUS: function(USname, table) {
         var tableName = table;
-        var grSysUpdateSet = new GlideRecord(tableName);
+        var grSysUpdateSet = new GlideRecord("table");
         grSysUpdateSet.addEncodedQuery("name=" + USname);
         grSysUpdateSet.query();
         return grSysUpdateSet.next();
     },
 
+
+    checkUS: function(USname, configuration) {
+        gs.info("USname " + USname)
+        var grSysUpdateSet = new GlideRecord("x_322488_clone_a_0_update_set");
+        grSysUpdateSet.addEncodedQuery("configuration=" + configuration.sys_id + "^name=" + USname);
+        grSysUpdateSet.query();
+        return grSysUpdateSet.next();
+    },
 
     type: 'CloneAnalyseUtils'
 };]]></script>
@@ -50,13 +88,13 @@ CloneAnalyseUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-07 20:40:42</sys_created_on>
         <sys_id>9cc36a711b822110407dca641a4bcb0b</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>90</sys_mod_count>
         <sys_name>CloneAnalyseUtils</sys_name>
         <sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
         <sys_update_name>sys_script_include_9cc36a711b822110407dca641a4bcb0b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-07 23:32:20</sys_updated_on>
+        <sys_updated_on>2023-04-16 00:18:32</sys_updated_on>
     </sys_script_include>
 </record_update>

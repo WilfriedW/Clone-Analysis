@@ -16,7 +16,7 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>false</display>
+        <display>true</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
         <sys_update_name>sys_dictionary_x_322488_clone_a_0_configuration_table_number</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-07 23:09:40</sys_updated_on>
+        <sys_updated_on>2023-04-15 19:02:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

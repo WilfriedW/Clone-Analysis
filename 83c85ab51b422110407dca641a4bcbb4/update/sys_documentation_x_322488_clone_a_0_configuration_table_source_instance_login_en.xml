@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="include_default_update_set" label="Include Default Update Set" language="en" table="x_322488_clone_a_0_configuration_table">
+    <sys_documentation element="source_instance_login" label="Source Instance login" language="en" table="x_322488_clone_a_0_configuration_table">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>include_default_update_set</element>
+            <element>source_instance_login</element>
             <help/>
             <hint/>
-            <label>Include Default Update Set</label>
+            <label>Source Instance login</label>
             <language>en</language>
             <name>x_322488_clone_a_0_configuration_table</name>
             <plural/>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-04-07 23:05:43</sys_created_on>
+            <sys_created_on>2023-04-15 21:10:10</sys_created_on>
             <sys_mod_count>3</sys_mod_count>
-            <sys_name>Include Default Update Set</sys_name>
+            <sys_name>Source Instance login</sys_name>
             <sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
             <sys_policy/>
             <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
-            <sys_update_name>sys_documentation_x_322488_clone_a_0_configuration_table_include_default_update_set_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_322488_clone_a_0_configuration_table_source_instance_login_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-04-07 23:05:44</sys_updated_on>
+            <sys_updated_on>2023-04-15 21:10:12</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

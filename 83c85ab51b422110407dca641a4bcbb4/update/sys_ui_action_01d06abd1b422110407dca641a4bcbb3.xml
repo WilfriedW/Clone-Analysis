@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name/>
-        <active>true</active>
+        <active>false</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
@@ -34,7 +34,6 @@
 request.setEndpoint(current.instance_url + '/api/now/v1/table/sys_update_set?sysparm_query=is_default=' + current.include_default_update_set);
 request.setHttpMethod('GET');
 
-
 var grCredential = new GlideRecord("discovery_credentials");
 if (grCredential.get(current.login)) {
     var user = grCredential.user_name; //'admin';
@@ -57,7 +56,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>01d06abd1b422110407dca641a4bcbb3</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Get Local update Set</sys_name>
         <sys_overrides/>
         <sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
@@ -65,7 +64,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
         <sys_update_name>sys_ui_action_01d06abd1b422110407dca641a4bcbb3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-07 23:33:02</sys_updated_on>
+        <sys_updated_on>2023-04-15 23:06:12</sys_updated_on>
         <table>x_322488_clone_a_0_configuration_table</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

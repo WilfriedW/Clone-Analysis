@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="instance_url" table="x_322488_clone_a_0_configuration_table">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Instance URL</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>instance_url</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="URL">url</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_322488_clone_a_0_configuration_table</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-07 19:52:04</sys_created_on>
+        <sys_id>08c99af51b422110407dca641a4bcbe3</sys_id>
+        <sys_name>Instance URL</sys_name>
+        <sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
+        <sys_update_name>sys_dictionary_x_322488_clone_a_0_configuration_table_instance_url</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-15 19:02:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</application>
+        <file_path/>
+        <instance_id>a18f45d8db8dfac0bdabf0e5bf961912</instance_id>
+        <instance_name>dev28551</instance_name>
+        <name>sys_dictionary_x_322488_clone_a_0_configuration_table_instance_url</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="instance_url" table="x_322488_clone_a_0_configuration_table"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Instance URL</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>instance_url</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="URL">url</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_322488_clone_a_0_configuration_table</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-07 19:52:04</sys_created_on><sys_id>08c99af51b422110407dca641a4bcbe3</sys_id><sys_name>Instance URL</sys_name><sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package><sys_policy/><sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope><sys_update_name>sys_dictionary_x_322488_clone_a_0_configuration_table_instance_url</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-15 19:02:07</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-1767010574</payload_hash>
+        <record_name>Configuration.Instance URL</record_name>
+        <reverted_from/>
+        <source>d917ad721b422110407dca641a4bcbf9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-15 19:02:07</sys_created_on>
+        <sys_id>a20bd3101b522110407dca641a4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187864bcd230000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-15 19:02:07</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>aa0bd310ef522110a42804b3843ad78b</update_guid>
+        <update_guid_history>aa0bd310ef522110a42804b3843ad78b:-1767010574,8f1a979c98122110dbd45ed168f6753b:-917386734,60c9daf5a0422110c5acd02b8ac1589e:-1392508299,1cc9daf53a42211046e1cc903d3def2e:147731645</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-15 21:58:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>265306344a7949d8a37738ec335fd010</sys_id>
+        <sys_metadata>08c99af51b422110407dca641a4bcbe3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Instance URL</sys_name>
+        <sys_package display_value="Clone analysis" source="x_322488_clone_a_0">83c85ab51b422110407dca641a4bcbb4</sys_package>
+        <sys_parent display_value="Configuration">5e29deb51b422110407dca641a4bcba8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Clone analysis">83c85ab51b422110407dca641a4bcbb4</sys_scope>
+        <sys_scope_delete display_value="">2958f5364143467d94fa593e4159fd31</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_322488_clone_a_0_configuration_table_instance_url</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_322488_clone_a_0_configuration_table_instance_url">a20bd3101b522110407dca641a4bcb8c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-15 21:58:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
